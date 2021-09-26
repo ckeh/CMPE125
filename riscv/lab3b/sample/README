@@ -1,0 +1,9 @@
+
+# compile, generate assembly
+riscv64-unknown-elf-gcc -O1 -S test1.c
+
+# build the object
+riscv64-unknown-elf-gcc -O1 -c test1.c
+
+# dump the machine code and assembly
+riscv64-unknown-elf-objdump -S test1.o
