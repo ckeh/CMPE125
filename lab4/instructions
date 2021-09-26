@@ -1,0 +1,73 @@
+
+//----------------------OPCODE = OP-------------------------------------------------
+  //top->insn = 0xae0db3; // ADD
+  top-> insn = 0x41FF8FB3;  //SUB
+  
+  //top-> insn = 0x01FF9FB3;  //SLL
+  //top-> insn = 0x01FFAFB3;  //SLT
+  //top-> insn = 0x01FFBFB3;  //SLTU
+  //top-> insn = 0x01FFCFB3;  //XOR
+  //top-> insn = 0x01FFDFB3;  //SRL 
+  //top-> insn = 0x41FFDFB3;  //SRA
+  //top-> insn = 0x01FFEFB3;  //OR
+  //top-> insn = 0x01FFFFB3;  //AND
+
+//----------------------OPCODE = OP_IMM-----------------------------------------------
+  //top-> insn = 0xAAAF8F93;  //ADDI
+  //top-> insn = 0xAAAFAF93;  //SLTI
+  //top-> insn = 0xAAAFBF93;  //SLTIU
+  //top-> insn = 0xAAAFCF93;  //XORI
+  //top-> insn = 0xAAAFEF93;  //ORI
+  //top-> insn = 0xAAAFFF93;  //ANDI
+  //top-> insn = 0x015F9F93;  //SLLI
+  //top-> insn = 0x015FDF93;  //SRLI
+  //top-> insn = 0x415FDF93;  //SRAI
+
+
+//NO
+  //top-> insn = 0x015F9F93;  //SLLI
+  //top-> insn = 0x015FDF93;  //SRLI
+  //top-> insn = 0x215FDF93;  //SRAI
+
+//----------------------OPCODE = AUIPC------------------------------------------------
+  //top-> insn = 0xAAAAAF97;  //AUIPC
+ 
+//----------------------OPCODE = OP_IMM_32--------------------------------------------
+  //top-> insn = 0xAAAF8F9B;  //ADDIW
+  //top-> insn = 0x015F9F9B;  //SLLIW
+  //top-> insn = 0x015FDF9B;  //SRLIW
+  //top-> insn = 0x415FDF9B;  //SRAIW
+ 
+//----------------------OPCODE = OP_32------------------------------------------------
+  //top-> insn = 0x01FF8FBB;  //ADDW
+  //top-> insn = 0x41FF8FBB;  //SUBW
+  //top-> insn = 0x01FF9FBB;  //SLLW
+  //top-> insn = 0x01FFDFBB;  //SRLW
+  //top-> insn = 0x41FFDFBB;  //SRAW
+
+//----------------------OPCODE = BRANCH-----------------------------------------------
+  //top-> insn = 0xABFF8AE3;  //BEQ
+  //top-> insn = 0xABFF9AE3;  //BNE
+  //top-> insn = 0xABFFCAE3;  //BLT
+  //top-> insn = 0xABFFDAE3;  //BGE
+  //top-> insn = 0xABFFEAE3;  //BLTU
+  //top-> insn = 0xABFFFAE3;  //BGEU
+
+//----------------------OPCODE = JALR-------------------------------------------------
+  //top-> insn = 0xAAAF8FE7;  //JALR
+
+//----------------------OPCODE = JAL-------------------------------------------------
+  //top-> insn = 0xAAAAAFEF;  //JAL
+
+
+
+
+
+
+
+  //----------------default----------------
+  //advance_clock(top,1);
+  
+  //top->insn = 0xFFFFFFB3;
+  //advance_clock(top,1);
+  //advance_clock(top,1);

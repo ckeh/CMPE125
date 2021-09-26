@@ -1,0 +1,63 @@
+
+  unsigned int rom [8] = { 
+    0x500013,  //ADDI 
+    0x110113, //addi
+    0x204E63, //blt
+    0x405282B3, //sub
+    0x40420233, //sub
+    0x42823B, //addw
+    0x12829B, //addiw
+    0xFE029CE3 //bne
+  };
+
+  unsigned int rom1 [8] = { 
+    0x80006F,  // JAL
+    0x40420233, //sub
+    0x20013, //addi
+    0x8067, //jalr
+    0x00,
+    0x00,
+    0x00,
+    0x00
+  };
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////
+  unsigned int rom [8] = { 
+    0x500013,  //ADDI 
+    0x110113, //addi
+    0x405282B3, //sub
+    0x40420233, //sub
+    0x500013,  //ADDI 
+    0x110113, //addi
+    0x405282B3, //sub
+    0x40420233, //sub
+  };
+
+
+
+
+
+
+
+///////////////////////with dependencies
+  unsigned int rom [8] = { 
+    0x500013,  //ADDI r0+5->r1 
+    0x500093,  //ADDI r1+5->r2 ...
+    0x508113,  //ADDI 
+    0x510193,  //ADDI 
+    0x518213,  //ADDI 
+    0x520293,  //ADDI 
+    0x528313,  //ADDI 
+    0x530393,  //ADDI 
+  };
+
+

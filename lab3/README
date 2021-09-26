@@ -1,0 +1,29 @@
+Files to be submitted:
+
+Makefiles:
+makefile ------------- currently makefile_core
+makefile_core
+makefile_icache
+makefile_regfile
+
+Tests:
+core_tb.cpp
+icache_tb.cpp
+regfile_tb.cpp
+
+rtl:
+core.v
+fetch.v
+decode.v
+execute.v
+icache.v
+signext.v
+regfile.v
+alu.v
+flop.v
+flop_r.v
+flop_e.v
+flop_er.v
+
+my valid bits are only set for 1 cycle 
+There are 3 makefiles and I run the command cp desired_makefile makefile
